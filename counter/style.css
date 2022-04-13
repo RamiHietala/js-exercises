@@ -1,0 +1,21 @@
+.upper-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #333;
+    padding: 2em;
+    color: #fff;
+    max-width: 900px;
+    margin: 2em auto;
+}
+
+.button-container {
+    display: block;
+}
+.btn {
+    padding: 10px 20px;
+}
+span.value {
+    font-size: 3em;
+}

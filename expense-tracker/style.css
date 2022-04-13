@@ -1,0 +1,79 @@
+* {
+    color: #C3C2C7;
+}
+body {
+    background:#1D1D2D;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.input-container .date, .input-container .amount {
+    width: 46%;
+}
+.input-container span {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.input-container input {
+    padding: .6em;
+    width: 100%;
+    border: solid 1px #C3C2C7;
+    background-color: #222533;
+}
+
+input#esubmit {
+    background-color: #7434C3;
+    border: none;
+    cursor: pointer;
+    max-width: 100px;
+    margin: 1em auto;
+    padding: 1em;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+#expensesTable {
+    width: 100%;
+    margin-top: 2em;
+    border-spacing: 0;
+    border-collapse: collapse;
+    
+}
+
+#tbody {
+    margin-top: .3em;
+}
+th {
+    font-size: 19px;
+    font-weight: 600;
+    border: 1px solid #C3C2C7;
+    padding: 1em;
+}
+
+td {
+    border: solid 1px #C3C2C7;
+    padding: 1em;
+}
+tr {
+    text-align: left;
+}
+.delete-btn {
+    background-color: #7434C3;
+    color: #FFF;
+    border: none;
+    padding: .5em .7em;
+    cursor: pointer;
+}

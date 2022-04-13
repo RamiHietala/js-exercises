@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("bg.jpg");
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+.card {
+    background: #e3e3e3;
+    padding: 5%;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 450px;
+    margin: 1em;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.search-bar {
+    border-radius: 50px;
+    border: none;
+    width: 100%;
+    padding: .8em; 
+}
+.search-box button {
+    margin: .5em;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    border: none;
+    cursor: pointer;
+}
+.city {
+    margin-bottom: 20px;
+}
+.temp {
+    font-size: 2em;
+}
