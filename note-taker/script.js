@@ -25,14 +25,16 @@ addNoteBtn.onclick = () => {
     viewBtn.appendChild(document.createTextNode('View details'));
 
 
-    /* textArea.value = ""; */
+    textArea.value = "";
+    textArea.focus();
+}
 }
 
-}
 noteContainer.addEventListener('click', (e) => {
     if (e.target.classList.contains('viewBtn')) {
         let modalOverlay = document.createElement('div');
         let modalContainer = document.createElement('div');
+        let p = document.createElement('p');
         let closeBtn = document.createElement('button');
 
         closeBtn.classList = 'closeBtn'; 
@@ -41,11 +43,22 @@ noteContainer.addEventListener('click', (e) => {
 
         container.appendChild(modalOverlay);
         modalOverlay.appendChild(modalContainer);
-        modalContainer.appendChild(closeBtn);
-        modalContainer.appendChild(document.createTextNode(textArea.value));
+        modalContainer.append(p,closeBtn);
+
+        const currentNoteDiv = e.target.closest('.noteDiv');
+        const currentNoteText = currentNoteDiv.querySelector('.noteText').textContent;
+
+        p.appendChild(document.createTextNode(currentNoteText));
 
         closeBtn.appendChild(document.createTextNode('Close'));
 
     }
     
+});
+
+container.addEventListener('click', (e) => {
+    if (e.target.classList.contains('closeBtn')) {
+        const delet = document.querySelector('.modal-overlay');
+        delet.remove();
+    }
 });
